@@ -2,7 +2,7 @@
 import os
 class Config:
     # Database settings...
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///portfolio.db')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:gftiuHVFiCBXtTvrNNhpdxhGNiDDOwrr@junction.proxy.rlwy.net:32654/railway')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'jwt-secret-string'
     
